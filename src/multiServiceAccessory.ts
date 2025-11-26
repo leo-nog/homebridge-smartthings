@@ -25,6 +25,7 @@ import { WindowCoveringService } from './services/windowCoveringService';
 import { ThermostatService } from './services/thermostatService';
 import { StatelessProgrammableSwitchService } from './services/statelessProgrammableSwitchService';
 import { AirConditionerService } from './services/airConditionerService';
+import { PowerConsumptionService } from './services/powerConsumptionService';
 import { Command } from './services/smartThingsCommand';
 // type DeviceStatus = {
 //   timestamp: number;
@@ -73,6 +74,7 @@ export class MultiServiceAccessory {
     'button': StatelessProgrammableSwitchService,
     'battery': BatteryService,
     'valve': ValveService,
+    'powerConsumptionReport': PowerConsumptionService,
   };
 
   // Maps combinations of supported capabilities to a service
